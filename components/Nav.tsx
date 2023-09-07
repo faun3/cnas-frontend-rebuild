@@ -68,32 +68,38 @@ const navLinksObject = [
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between md:max-w-[calc(100%-256px)] my-auto">
+    <nav className="flex justify-center items-center sticky top-0">
       {/* logo */}
-      <span>CNRebuild</span>
-      {/* actual nav */}
-      <NavigationMenu>
-        <NavigationMenuList>
-          {navLinksObject.map((navSection, idx) => {
-            return (
-              <NavigationMenuItem key={idx}>
-                <NavigationMenuTrigger>
-                  {navSection.sectionTitle}
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className="flex flex-col min-w-[300px]">
-                  {navSection.subsections.map((subsection, ssIdx) => {
-                    return (
-                      <NavigationMenuLink key={ssIdx}>
-                        {subsection}
-                      </NavigationMenuLink>
-                    );
-                  })}
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            );
-          })}
-        </NavigationMenuList>
-      </NavigationMenu>
+      <div className="flex justify-between items-center md:w-[calc(100%-256px)] h-[4rem]">
+        <span>CNRebuild</span>
+        {/* actual nav */}
+        <NavigationMenu>
+          <NavigationMenuList>
+            {navLinksObject.map((navSection, idx) => {
+              return (
+                <NavigationMenuItem key={idx}>
+                  <NavigationMenuTrigger>
+                    {navSection.sectionTitle}
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="flex flex-col gap-10 w-full">
+                    <ul className="min-w-[600px] flex flex-wrap gap-5 justify-center items-center px-10 py-5">
+                      {navSection.subsections.map((subsection, ssIdx) => {
+                        return (
+                          <NavigationMenuLink
+                            key={ssIdx}
+                            className="underline cursor-pointer">
+                            {subsection}
+                          </NavigationMenuLink>
+                        );
+                      })}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              );
+            })}
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
     </nav>
   );
 };

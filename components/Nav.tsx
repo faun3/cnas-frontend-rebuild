@@ -68,10 +68,12 @@ const navLinksObject = [
 
 const Nav = () => {
   return (
-    <nav className="flex justify-center items-center sticky top-0">
+    <nav className="flex justify-center items-center sticky top-0 z-10 bg-slate-100">
       {/* logo */}
-      <div className="flex justify-between items-center md:w-[calc(100%-256px)] h-[4rem]">
-        <span>CNRebuild</span>
+      <div className="flex justify-between items-center md:w-[calc(100%-256px)] h-[4rem] z-10">
+        <span className="text-red-400 text-2xl font-bold">
+          CN<span className="text-blue-700">Re</span>build
+        </span>
         {/* actual nav */}
         <NavigationMenu>
           <NavigationMenuList>

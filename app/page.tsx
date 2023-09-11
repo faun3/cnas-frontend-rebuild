@@ -1,14 +1,4 @@
-import Image from "next/image";
-
-const services = [
-  "Check the price of medication",
-  "Chat with us online",
-  "My personal eFile",
-  "Check your insurance status",
-  "Download PIAS Software",
-  "Online pharmaceutical supplier data",
-  "Nationwide contact links",
-];
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -20,42 +10,24 @@ export default function Home() {
         </span>
       </div>
 
-      {/* container */}
-      <div className="w-[calc(100%-256px)] mx-auto flex">
-        {/* Services */}
-        <div className="rounded-xl bg-sky-100 overflow-hidden text-lg w-[25em] my-10">
-          <div className="bg-slate-200 font-bold w-full py-2 px-5">
-            What can we help you with?
-          </div>
-          <ul>
-            {services.map((service, idx) => {
-              return (
-                <li
-                  className="py-1 px-5 hover:bg-white"
-                  key={idx}>
-                  {service}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+      {/* Services */}
+      <Services />
 
-        {/* Insurance and information */}
-        <div className="rounded-xl bg-sky-100 my-10 mx-5">
-          <h1 className="font-bold text-3xl text-center">
-            Insurance - peace of mind for you and your loved ones
-          </h1>
-          <button className="rounded-lg px-6 py-3 bg-blue-700 text-white font-bold my-5">
-            Check your insurance status
-          </button>
-          <div>
-            <h2>Information about our insurance offers</h2>
-            <p>
-              We offer a wide range of insurance products to suit your needs.
-              Whether you are looking for a simple health insurance or a
-              comprehensive package, we have the right solution for you.
-            </p>
-          </div>
+      {/* Insurance and information */}
+      <div className="rounded-xl bg-sky-100 my-10 mx-5">
+        <h1 className="font-bold text-3xl text-center">
+          Insurance - peace of mind for you and your loved ones
+        </h1>
+        <button className="rounded-lg px-6 py-3 bg-blue-700 text-white font-bold my-5">
+          Check your insurance status
+        </button>
+        <div>
+          <h2>Information about our insurance offers</h2>
+          <p>
+            We offer a wide range of insurance products to suit your needs.
+            Whether you are looking for a simple health insurance or a
+            comprehensive package, we have the right solution for you.
+          </p>
         </div>
       </div>
     </>

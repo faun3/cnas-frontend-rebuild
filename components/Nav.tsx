@@ -68,12 +68,10 @@ const navLinksObject = [
 
 const Nav = () => {
   return (
-    <nav className="flex justify-center items-center sticky top-0 z-10 bg-slate-100">
+    <nav className="flex justify-center items-center sticky top-0 z-10 bg-white">
       {/* logo */}
-      <div className="flex justify-between items-center md:w-[calc(100%-256px)] h-[4rem] z-10">
-        <span className="text-red-400 text-2xl font-bold">
-          CN<span className="text-blue-700">Re</span>build
-        </span>
+      <div className="flex justify-between items-center md:w-[calc(100%-256px)] h-[4rem] z-10 relative">
+        <span className="text-blue-700 ">Re</span>
         {/* actual nav */}
         <NavigationMenu>
           <NavigationMenuList>
@@ -83,7 +81,7 @@ const Nav = () => {
                   <NavigationMenuTrigger>
                     {navSection.sectionTitle}
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent className="flex flex-col gap-10 w-full">
+                  <NavigationMenuContent className="flex flex-col gap-10 w-full absolute top-0">
                     <ul className="min-w-[600px] flex flex-wrap gap-5 justify-center items-center px-10 py-5">
                       {navSection.subsections.map((subsection, ssIdx) => {
                         return (

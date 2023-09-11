@@ -1,4 +1,5 @@
 import Services from "@/components/Services";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -15,22 +16,8 @@ export default function Home() {
         <Services />
       </div>
 
-      {/* Insurance and information */}
-      <div className="rounded-xl bg-sky-100 my-10 mx-5">
-        <h1 className="font-bold text-3xl text-center">
-          Insurance - peace of mind for you and your loved ones
-        </h1>
-        <button className="rounded-lg px-6 py-3 bg-blue-700 text-white font-bold my-5">
-          Check your insurance status
-        </button>
-        <div>
-          <h2>Information about our insurance offers</h2>
-          <p>
-            We offer a wide range of insurance products to suit your needs.
-            Whether you are looking for a simple health insurance or a
-            comprehensive package, we have the right solution for you.
-          </p>
-        </div>
+      <div className="flex justify-between">
+        <Projects />
       </div>
     </>
   );

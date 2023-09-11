@@ -9,10 +9,10 @@ import bottomLeft from "@/public/bottomLeft.jpg";
 
 const Hero = () => {
   return (
-    <div className="p-[3rem] flex flex-col md:flex-row gap-[4rem] items-center">
+    <div className="p-[3rem] flex flex-col-reverse md:flex-row gap-[4rem] items-center">
       <div className="flex flex-col">
-        <div className="relative">
-          <div className="relative rounded-[20px] w-[35rem] h-[14rem] overflow-hidden mb-[2rem]">
+        <div className="relative h-fit w-fit mx-auto">
+          <div className="relative rounded-[20px] w-[20rem] md:w-[30rem] h-[14rem] overflow-hidden mb-[2rem]">
             <Image
               className="object-cover"
               src={top}
@@ -29,9 +29,9 @@ const Hero = () => {
             aria-hidden="true"
           />
         </div>
-        <div className="flex flex-col md:flex-row gap-[2rem]">
-          <div className="relative">
-            <div className="relative rounded-[20px] w-[10.25rem] h-[14rem] overflow-hidden ml-[1.5rem]">
+        <div className="flex md:flex-row gap-[2rem] flex-col">
+          <div className="relative w-fit h-fit mx-auto md:mx-0">
+            <div className="relative rounded-[20px] w-[10.25rem] h-[14rem] overflow-hidden md:ml-[1.5rem] mx-auto">
               <Image
                 className="object-cover"
                 src={bottomLeft}
@@ -48,8 +48,8 @@ const Hero = () => {
               aria-hidden="true"
             />
           </div>
-          <div className="relative w-fit h-fit">
-            <div className="relative rounded-[20px] w-[16rem] h-[11rem] overflow-hidden">
+          <div className="relative w-fit h-fit mx-auto md:mx-0">
+            <div className="relative rounded-[20px] w-[16rem] h-[11rem] overflow-hidden mx-auto">
               <Image
                 className="object-cover"
                 src={bottomRight}

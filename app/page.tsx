@@ -11,7 +11,9 @@ export default function Home() {
       </div>
 
       {/* Services */}
-      <Services />
+      <div className="flex justify-center">
+        <Services />
+      </div>
 
       {/* Insurance and information */}
       <div className="rounded-xl bg-sky-100 my-10 mx-5">

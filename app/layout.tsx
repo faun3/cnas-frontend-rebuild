@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <Nav />
-        {children}
+        <div className="md:w-[1120px] mx-auto">{children}</div>
       </body>
     </html>
   );

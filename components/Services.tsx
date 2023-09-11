@@ -82,7 +82,9 @@ const Services = () => {
           </span>
         </div>
       </div>
-      <p></p>
+      <p className="text-gray underline text-center mt-[4rem] font-medium">
+        Browse our full list of services here
+      </p>
     </div>
   );
 };

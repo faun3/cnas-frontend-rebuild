@@ -1,23 +1,17 @@
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Newsletter from "@/components/Newsletter";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
-      {/* hero */}
-      <div className="w-screen h-[600px] overflow-hidden z-[-1] bg-[url('/heroBanner.jpg')] bg-bottom relative">
-        <span className="text-white bottom-1/2 absolute left-[5%] font-bold text-3xl">
-          Your health is important. <br /> We protect it.
-        </span>
-      </div>
-
-      {/* Services */}
-      <div className="flex justify-center">
+      <Hero />
+      <div className="flex justify-center mb-[128px] mt-[32px]">
         <Services />
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-center gap-[64px]">
         <Projects />
         <Newsletter />
       </div>

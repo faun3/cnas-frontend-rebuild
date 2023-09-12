@@ -3,6 +3,7 @@ import Projects from "@/components/Projects";
 import Newsletter from "@/components/Newsletter";
 import Hero from "@/components/Hero";
 import Info from "@/components/Info";
+import Articles from "@/components/Articles";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       </div>
       <div>
         <Info />
+        <Articles />
       </div>
     </>
   );

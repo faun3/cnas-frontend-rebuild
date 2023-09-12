@@ -1,23 +1,23 @@
 import Image from "next/image";
+import article1 from "@/public/article1.jpg";
+import article2 from "@/public/article2.jpg";
+import article3 from "@/public/article3.jpg";
 
 const articles = [
   {
     title: "ePlatform Maintenance",
     date: "10 Sep. 2023",
-    image:
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+    image: article1,
   },
   {
     title: "Allergy medication shortage",
     date: "29 Aug. 2023",
-    image:
-      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+    image: article2,
   },
   {
     title: "Partnership program closed",
     date: "15 Aug. 2023",
-    image:
-      "https://images.unsplash.com/photo-1584516150909-c43483ee7932?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2024&q=80",
+    image: article3,
   },
 ];
 
@@ -34,13 +34,13 @@ const Articles = () => {
               key={index}
               className="rounded-[20px] overflow-hidden h-[20rem] w-[18rem] relative border border-cream shadow">
               <Image
-                className="-z-20 object-cover"
+                className="object-cover"
                 src={article.image}
                 fill={true}
                 alt=""
               />
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black/90 -z-10"></div>
-              <div className="absolute bottom-0 left-0 padding-[1rem] m-[1rem] overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black/90 z-10"></div>
+              <div className="absolute bottom-0 left-0 padding-[1rem] m-[1rem] overflow-hidden z-20">
                 <p className="text-[#e5e2e2] text-[0.875rem] mb-[0.75rem]">
                   {article.date}
                 </p>

@@ -2,6 +2,7 @@ import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Newsletter from "@/components/Newsletter";
 import Hero from "@/components/Hero";
+import Info from "@/components/Info";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       <div className="flex justify-center gap-[64px]">
         <Projects />
         <Newsletter />
+      </div>
+      <div>
+        <Info />
       </div>
     </>
   );

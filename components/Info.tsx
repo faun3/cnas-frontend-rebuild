@@ -11,18 +11,18 @@ const topics = [
 
 const Info = () => {
   return (
-    <div className="p-[2rem]  my-[2rem]">
+    <div className="p-[2rem] ] my-[2rem]">
       <p className="text-[4rem] font-bold text-center mb-[1.5rem]">
         We believe in transparency
       </p>
       <p className="text-gray text-center mb-[3rem]">
         All the info you need, always available and constantly kept up to date
       </p>
-      <div className="flex flex-col gap-[1rem] md:grid md:grid-cols-2 md:grid-rows-2 md:gap-[2rem]">
+      <div className="flex flex-col items-center gap-[1rem] md:grid md:grid-cols-2 md:grid-rows-2 md:gap-[2rem]">
         {topics.map((topic, index) => {
           return (
             <div
-              className="flex flex-col gap-[1rem]"
+              className="flex flex-col gap-[1rem] w-[20rem]"
               key={index}>
               <div className="flex gap-[.75rem]">
                 <Image

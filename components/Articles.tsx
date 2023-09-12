@@ -27,7 +27,7 @@ const Articles = () => {
       <p className="text-[2rem] font-bold mb-[2.25rem] text-center">
         Our latest articles
       </p>
-      <div className="flex flex-col md:flex-row md:justify-between gap-[1rem]">
+      <div className="flex flex-col md:flex-row md:justify-between items-center md:items-start gap-[1rem]">
         {articles.map((article, index) => {
           return (
             <div

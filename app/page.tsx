@@ -8,18 +8,20 @@ import Articles from "@/components/Articles";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <div className="flex justify-center mb-[128px] mt-[32px]">
+      <div className="flex justify-center">
+        <Hero />
+      </div>
+      <div className="flex justify-center mb-[2rem] mt-[2rem]">
         <Services />
       </div>
 
-      <div className="flex justify-center gap-[64px]">
-        <Projects />
-        <Newsletter />
-      </div>
       <div>
         <Info />
         <Articles />
+      </div>
+      <div className="flex justify-center gap-[4rem] mb-[2rem] p-[2rem]">
+        <Projects />
+        <Newsletter />
       </div>
     </>
   );

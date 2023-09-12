@@ -6,12 +6,12 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="p-[2rem] rounded-[20px] shadow md:w-[51.875rem] border border-cream">
+    <div className="p-[2rem] md:w-[51.875rem]">
       <p className="font-bold text-[2rem] mb-[2.5rem] text-center">
         What can we do for you?
       </p>
-      <div className="flex flex-row justify-between w-full">
-        <div>
+      <div className="flex flex-col md:flex-row justify-between w-full gap-[2rem]">
+        <div className="w-full md:w-[13rem] h-[16rem]">
           <Image
             className="mb-[1.5rem]"
             src={pillSurrounded}
@@ -20,7 +20,7 @@ const Services = () => {
             alt=""
             aria-hidden="true"></Image>
           <p className="font-bold mb-[0.75rem]">Check prices</p>
-          <p className="text-gray w-[12rem] mb-[1.5rem] h-[9rem]">
+          <p className="text-gray mb-[1.5rem]">
             Check the prices of medication in real time using our online
             platform. We keep you up to date so there&apos;s no more unpleasant
             surprises.
@@ -35,7 +35,7 @@ const Services = () => {
               aria-hidden="true"></Image>
           </span>
         </div>
-        <div>
+        <div className="w-full md:w-[13rem] h-[16rem]">
           <Image
             className="mb-[1.5rem]"
             src={chatSurrounded}
@@ -44,7 +44,7 @@ const Services = () => {
             alt=""
             aria-hidden="true"></Image>
           <p className="font-bold mb-[0.75rem]">Chat with us</p>
-          <p className="text-gray w-[12rem] mb-[1.5rem] h-[9rem]">
+          <p className="text-gray mb-[1.5rem]">
             Chat with one of our experts and get help with our services, or
             discuss different pricing options. We answer 24/7.
           </p>
@@ -58,7 +58,7 @@ const Services = () => {
               aria-hidden="true"></Image>
           </span>
         </div>
-        <div>
+        <div className="w-full md:w-[13rem] h-[16rem]">
           <Image
             className="mb-[1.5rem]"
             src={clipboardSurrounded}
@@ -67,7 +67,7 @@ const Services = () => {
             alt=""
             aria-hidden="true"></Image>
           <p className="font-bold mb-[0.75rem]">Personalized eFile</p>
-          <p className="text-gray w-[12rem] mb-[1.5rem] h-[9rem]">
+          <p className="text-gray mb-[1.5rem]">
             All your medical info, including insurance status in one place. We
             protect your data and comply with all EU laws and regulations.
           </p>

@@ -11,7 +11,7 @@ const topics = [
 
 const Info = () => {
   return (
-    <div className="p-[2rem] border border-cream shadow rounded-[20px] my-[2rem]">
+    <div className="p-[2rem]  my-[2rem]">
       <p className="text-[4rem] font-bold text-center mb-[1.5rem]">
         We believe in transparency
       </p>

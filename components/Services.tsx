@@ -25,7 +25,7 @@ const Services = () => {
             platform. We keep you up to date so there&apos;s no more unpleasant
             surprises.
           </p>
-          <span className="flex text-mainBlue font-semibold">
+          <span className="flex text-mainBlue font-semibold cursor-pointer">
             Try now&nbsp;
             <Image
               src={arrow16px}
@@ -48,7 +48,7 @@ const Services = () => {
             Chat with one of our experts and get help with our services, or
             discuss different pricing options. We answer 24/7.
           </p>
-          <span className="flex text-mainBlue font-semibold">
+          <span className="flex text-mainBlue font-semibold cursor-pointer">
             Try now&nbsp;
             <Image
               src={arrow16px}
@@ -71,7 +71,7 @@ const Services = () => {
             All your medical info, including insurance status in one place. We
             protect your data and comply with all EU laws and regulations.
           </p>
-          <span className="flex text-mainBlue font-semibold">
+          <span className="flex text-mainBlue font-semibold cursor-pointer">
             Try now&nbsp;
             <Image
               src={arrow16px}
@@ -82,7 +82,7 @@ const Services = () => {
           </span>
         </div>
       </div>
-      <p className="text-gray underline text-center mt-[4rem] font-medium">
+      <p className="text-gray underline text-center mt-[4rem] font-medium cursor-pointer">
         Browse our full list of services here
       </p>
     </div>

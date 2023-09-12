@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Nav from "@/components/Nav";
+import DaisyNav from "@/components/DaisyNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <Nav />
+        <DaisyNav />
         <div className="lg:w-[1120px] md:w-[calc(836px-64px)] mx-auto">
           {children}
         </div>

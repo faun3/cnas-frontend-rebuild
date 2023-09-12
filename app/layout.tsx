@@ -19,7 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <DaisyNav />
+        <div className="w-full flex justify-center">
+          <div className="w-[85%]">
+            <DaisyNav />
+          </div>
+        </div>
         <div className="lg:w-[1120px] md:w-[calc(836px-64px)] mx-auto">
           {children}
         </div>

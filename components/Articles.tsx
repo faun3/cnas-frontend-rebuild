@@ -44,7 +44,7 @@ const Articles = () => {
                 <p className="text-[#e5e2e2] text-[0.875rem] mb-[0.75rem]">
                   {article.date}
                 </p>
-                <p className="font-semibold text-[1.25rem] text-white">
+                <p className="font-semibold text-[1.25rem] text-white cursor-pointer">
                   {article.title}
                 </p>
               </div>

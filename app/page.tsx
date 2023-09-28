@@ -1,4 +1,5 @@
 import Services from "@/components/Services";
+import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import Newsletter from "@/components/Newsletter";
 import Hero from "@/components/Hero";
@@ -41,6 +42,7 @@ export default function Home() {
         <Projects />
         <Newsletter />
       </div>
+      <Footer />
     </>
   );
 }
